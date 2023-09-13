@@ -1,0 +1,24 @@
+package pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class CreateAccountPage {
+	@FindBy (xpath = "//input[@id='create-account-first-name']") private WebElement firstNameField;
+	@FindBy (xpath = "//input[@id='create-account-last-name']") private WebElement lastnameField;
+	@FindBy (xpath = "//input[@name='new-password']") private WebElement passwordFied;
+	@FindBy (xpath = "//span[text()='Use another email address']") private WebElement useAnotherEmail;
+	@FindBy (xpath = "//div[text()='Enter your first name.']") private WebElement firstNameFieldError;
+	@FindBy (xpath = "//div[text()='Enter your last name.']") private WebElement lastNameFieldError;
+	@FindBy (xpath = "//div[text()='Password cannot be blank.']") private WebElement passwordFieldError;
+	@FindBy (xpath = "//p[text()='SHOW']") private WebElement passwordShowButton;
+	@FindBy (xpath = "//span[text()='Mobile Number']") private WebElement mobileNumberField;
+	@FindBy (xpath = "//button[text()='CREATE ACCOUNT']") private WebElement createAccountButton;
+	
+	public CreateAccountPage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+
+}
