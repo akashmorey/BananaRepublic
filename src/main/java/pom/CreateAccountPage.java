@@ -19,10 +19,11 @@ public class CreateAccountPage {
 	@FindBy (xpath = "//a[@class=\"p-link-a\"][2]") 			    private WebElement Privacy_Policy;
 	@FindBy (xpath = "//a[@class=\"p-link-a\"][1]") 			    private WebElement Terms_Condition;
 
-	
+
 	public CreateAccountPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
+	
 	
 	public void enterFirstName(String FirstName) {
 		firstNameField.sendKeys(FirstName);
