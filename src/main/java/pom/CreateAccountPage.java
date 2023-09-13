@@ -16,9 +16,40 @@ public class CreateAccountPage {
 	@FindBy (xpath = "//p[text()='SHOW']") 							private WebElement passwordShowButton;
 	@FindBy (xpath = "//span[text()='Mobile Number']") 				private WebElement mobileNumberField;
 	@FindBy (xpath = "//button[text()='CREATE ACCOUNT']") 			private WebElement createAccountButton;
+	@FindBy (xpath = "//a[@class=\"p-link-a\"][2]") 			    private WebElement Privacy_Policy;
+	@FindBy (xpath = "//a[@class=\"p-link-a\"][1]") 			    private WebElement Terms_Condition;
+
 	
 	public CreateAccountPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-
+	
+	public void enterFirstName(String FirstName) {
+		firstNameField.sendKeys(FirstName);
+	}
+	public void enterLastName(String LastName) {
+		lastnameField.sendKeys(LastName);
+	}
+	public void enterPassword(String Pass) {
+		passwordFied.sendKeys(Pass);
+	}
+	public void clickOnShowPassword() {
+		passwordShowButton.sendKeys();
+	}
+	public void enterMobileNumber(CharSequence[] mobile) {
+		mobileNumberField.sendKeys(mobile);
+	}
+	public void clickOncreateAccountButton() {
+		createAccountButton.click();
+	}
+	public void clickOnuseAnotherEmail() {
+		useAnotherEmail.click();
+	}
+	public void clickOnTermsAndCondition() {
+		Terms_Condition.click();
+	}
+	public void clickOnPrivacyAndPolicy() {
+		Privacy_Policy.click();
+	}
+	
 }
