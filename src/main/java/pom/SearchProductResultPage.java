@@ -22,8 +22,7 @@ public class SearchProductResultPage {
 	@FindBy (xpath = "//button[text()='Price']") private WebElement prices;
 	@FindBy (xpath = "//button[text()='occasion']") private WebElement occasions;
 	@FindBy (xpath = "//button[text()='Fabric Material']") private WebElement fabricMaterials;
-
-
+	
 	
 	public SearchProductResultPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
