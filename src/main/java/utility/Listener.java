@@ -28,6 +28,7 @@ public class Listener extends BaseTest implements ITestListener {
 	
 	public void onTestSucess(ITestResult result)
 	{
+		System.out.println("Test is Success");
 	}
 
 }
