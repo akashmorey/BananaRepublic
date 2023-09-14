@@ -100,10 +100,4 @@ public class BRHome {
 		Contact_Us.click();	
 	}
 
-	
-	
-	
-	
-	
-
 }
