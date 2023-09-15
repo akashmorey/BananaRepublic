@@ -13,7 +13,7 @@ public static void clickScreenshot(WebDriver driver, String name) throws IOExcep
 		
 		File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
-		File destination = new File("C:\\WORK\\NEW workspace\\Naptol\\BananaRepublic\\ScreenShots"+name+".gif");
+		File destination = new File("C:\\WORK\\NEW workspace\\Naptol\\BananaRepublic\\ScreenShots\\"+name+".png");
 		
 		FileHandler.copy(source, destination);
 	}

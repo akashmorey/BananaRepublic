@@ -1,6 +1,6 @@
 package pom;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver;   
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -26,6 +26,24 @@ public class HomePage {
 	@FindBy (xpath = "(//a[text()='Find a store'])[1]")			private WebElement findStoreButtonLink;
 	@FindBy (xpath = "(//a[text()='Gift Card'])[1]")			private WebElement giftCardButtonLink;
 	@FindBy (xpath = "(//a[text()='Credit Card'])[1]")			private WebElement creaditCardButtonLink;
+	
+	@FindBy (xpath = "//span[text()='Stores & Services']") 					private WebElement storeAndServicesButtonLink;
+	@FindBy (xpath = "//span[text()='Shipping and handling']") 				private WebElement shippingAndHandlingButtonLink;
+	@FindBy (xpath = "//span[text()='Returns/Exchanges']") 					private WebElement returnsOrExchangeButtonLink;
+	@FindBy (xpath = "//span[text()='Size Charts']") 						private WebElement sizeChartButtonLink;
+	@FindBy (xpath = "//span[text()='Buy Online, Pick Up in Store']") 		private WebElement buyOnlineAndPickUpInStoreButtonLink;
+	@FindBy (xpath = "//span[text()='BR Atelier Styling Service']") 		private WebElement BRatelierStylingServiceButtonLink;
+	@FindBy (xpath = "//span[text()='BR Atelier Store Locations']") 		private WebElement BRatelierStoreLoctionsButtonLink;
+	@FindBy (xpath = "//span[text()='My Points and Rewards']")	 			private WebElement myPointsAndRewardsButtonLink;
+	@FindBy (xpath = "//span[text()='Explore Benefits']") 					private WebElement exploreBenifitsButtonLink;
+	@FindBy (xpath = "//span[text()='Pay Credit Card Bill']") 				private WebElement payreaditCardBillButtonLinc;
+	@FindBy (xpath = "//span[text()='Activate Credit Card']") 				private WebElement activateCreaditCardButtonLink;
+	@FindBy (xpath = "//span[text()='Join Banana Republic Rewards—it’s Free']") 	private WebElement joinbananaRepublicRewardButtonLink;
+	@FindBy (xpath = "//span[text()='or Apply Now for a Credit Card']") 			private WebElement applyNowForCreaditCardButtonLink;
+	@FindBy (xpath = "//span[text()='1-888-BRSTYLE (1-888-277-8953)']") 			private WebElement BRstyleButtonLink;		//allertPopup
+	@FindBy (xpath = "//span[text()='Store Locator']") 								private WebElement storeLocatorButtonlink;
+	@FindBy (xpath = "//span[text()='BR Home Stores']") 							private WebElement BRhomeStoresButtonLink;
+	@FindBy (xpath = "//span[text()='Banana Republic Factory Store']") 				private WebElement bananaRepublicFactoryButtonLink;
 
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -90,5 +108,58 @@ public class HomePage {
 	}
 	public void clickOnCreaditCardButtonLink() {
 		creaditCardButtonLink.click();
+	}
+	//
+	
+	public void clickOnStoreAndServicesButtonLink () {
+		storeAndServicesButtonLink.click();
+	}
+	public void clickOnShippingAndHandlingButtonLink () {
+		shippingAndHandlingButtonLink.click();
+	}
+	public void clickOnReturnsOrExchangeButtonLink () {
+		returnsOrExchangeButtonLink.click();	
+	}
+	public void clickOnSizeChartButtonLink () {
+		sizeChartButtonLink.click();
+	}
+	public void clickOnBuyOnlineAndPickUpInStoreButtonLink () {
+		buyOnlineAndPickUpInStoreButtonLink.click();
+	}
+	public void clickOnBRatelierStylingServiceButtonLink () {
+		BRatelierStylingServiceButtonLink.click();
+	}
+	public void clickOnBRatelierStoreLoctionsButtonLink () {
+		BRatelierStoreLoctionsButtonLink.click();
+	}
+	public void clickOnMyPointsAndRewardsButtonLink () {
+		myPointsAndRewardsButtonLink.click();
+	}
+	public void clickOnExploreBenifitsButtonLink () {
+		exploreBenifitsButtonLink.click();
+	}
+	public void clickOnPayreaditCardBillButtonLinc () {
+		payreaditCardBillButtonLinc.click();
+	}
+	public void clickOnActivateCreaditCardButtonLink () {
+		activateCreaditCardButtonLink.click();
+	}
+	public void clickOnJoinbananaRepublicRewardButtonLink () {
+		joinbananaRepublicRewardButtonLink.click();
+	}
+	public void clickOnApplyNowForCreaditCardButtonLink () {
+		applyNowForCreaditCardButtonLink.click();
+	}
+	public void clickOnBRstyleButtonLink () {
+		BRstyleButtonLink.click();
+	}
+	public void clickOnStoreLocatorButtonlink () {
+		storeLocatorButtonlink.click();
+	}
+	public void clickOnBRhomeStoresButtonLink () {
+		BRhomeStoresButtonLink.click();
+	}
+	public void clickOnBananaRepublicFactoryButtonLink () {
+		bananaRepublicFactoryButtonLink.click();
 	}
 }
