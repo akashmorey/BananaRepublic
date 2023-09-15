@@ -16,7 +16,7 @@ public class CreateAccountPage {
 	@FindBy (xpath = "//p[text()='SHOW']") 							private WebElement passwordShowButton;
 	@FindBy (xpath = "//span[text()='Mobile Number']") 				private WebElement mobileNumberField;
 	@FindBy (xpath = "//button[text()='CREATE ACCOUNT']") 			private WebElement createAccountButton;
-	@FindBy (xpath = "//a[@class=\"p-link-a\"][2]") 			    private WebElement Privacy_Policy;
+	@FindBy (xpath = "//a[@class=\"p-link-a\"][2]")   			    private WebElement Privacy_Policy;
 	@FindBy (xpath = "//a[@class=\"p-link-a\"][1]") 			    private WebElement Terms_Condition;
 
 
