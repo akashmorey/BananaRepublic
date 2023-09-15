@@ -162,6 +162,4 @@ public class HomePage {
 	public void clickOnBananaRepublicFactoryButtonLink () {
 		bananaRepublicFactoryButtonLink.click();
 	}
-
-		
 }
