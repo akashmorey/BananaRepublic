@@ -6,6 +6,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utility.BaseTest;
+
 public class BRHome {
 	
 	@FindBy (xpath = "//*[@id=\"headerContent\"]/div/div[1]/nav/div/ul/li[1]") 	private WebElement Living;

@@ -67,17 +67,4 @@ public class ShoppingCartPage {
 		LimitsApply.click();
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
