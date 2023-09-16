@@ -44,7 +44,17 @@ public class HomePage {
 	@FindBy (xpath = "//span[text()='Store Locator']") 								private WebElement storeLocatorButtonlink;
 	@FindBy (xpath = "//span[text()='BR Home Stores']") 							private WebElement BRhomeStoresButtonLink;
 	@FindBy (xpath = "//span[text()='Banana Republic Factory Store']") 				private WebElement bananaRepublicFactoryButtonLink;
+	
+	//dropdowns
+	@FindBy (xpath = "//a[text()='Sign In']") 						private WebElement signInButton;
+	@FindBy (xpath = "//a[text()='Join Banana Republic Rewards']") 	private WebElement joirBananaRepublicRewards;
+	@FindBy (xpath = "//a[text()='Orders & Returns']")			 	private WebElement ordersAndReturns;
+	@FindBy (xpath = "//a[text()='My Points and Rewards']") 		private WebElement myPointsAndRewards;
+	@FindBy (xpath = "//a[text()='Check Gift Card Balances']") 		private WebElement chechGiftCardAndBalances ;
+	@FindBy (xpath = "//a[text()='International Shipping']") 		private WebElement internationalShipping;
 
+	
+	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -162,4 +172,22 @@ public class HomePage {
 	public void clickOnBananaRepublicFactoryButtonLink () {
 		bananaRepublicFactoryButtonLink.click();
 	}
-}
+	public void clickOnSignInButton() {
+		signInButton.click();
+	}
+	public void clickOnJoirBananaRepublicRewards () {
+		joirBananaRepublicRewards.click();
+	}
+	public void clickOnOrdersAndReturns () {
+		ordersAndReturns.click();
+	}
+	public void clickOnMyPointsAndRewards () {
+		myPointsAndRewards.click();
+	}
+	public void clickOnChechGiftCardAndBalances () {
+		chechGiftCardAndBalances.click();
+	}
+	public void clickOnInternationalShipping () {
+		internationalShipping.click();
+	}
+	}

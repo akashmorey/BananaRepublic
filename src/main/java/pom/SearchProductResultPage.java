@@ -9,19 +9,19 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SearchProductResultPage {
-	@FindBy (xpath = "//button[@id='filterButton']" ) private WebElement filterButton;
-	@FindBy (xpath = "//button[text()='sort']" ) private WebElement sortButton;
-	@FindBy (xpath = "//div[@spacing='0.5']") private List <WebElement> products;
-	@FindBy (xpath = "//span[text()='Download our App']") private WebElement downloadAppLink;
-	@FindBy (xpath = "//button[@id='nebula_div_btn']" ) private WebElement feedbackButton;
-	@FindBy (xpath = "//li[@aria-selected='false']") private List <WebElement> sortButtonOptions;
+	@FindBy (xpath = "//button[@id='filterButton']" ) 		private WebElement filterButton;
+	@FindBy (xpath = "//button[text()='sort']" ) 			private WebElement sortButton;
+	@FindBy (xpath = "//div[@spacing='0.5']") 				private List <WebElement> products;
+	@FindBy (xpath = "//span[text()='Download our App']") 	private WebElement downloadAppLink;
+	@FindBy (xpath = "//button[@id='nebula_div_btn']" ) 	private WebElement feedbackButton;
+	@FindBy (xpath = "//li[@aria-selected='false']") 		private List <WebElement> sortButtonOptions;
 	
 	//filters
-	@FindBy (xpath = "//button[text()='Department']") private WebElement departments;
-	@FindBy (xpath = "//button[text()='Color']") private WebElement colours;
-	@FindBy (xpath = "//button[text()='Price']") private WebElement prices;
-	@FindBy (xpath = "//button[text()='occasion']") private WebElement occasions;
-	@FindBy (xpath = "//button[text()='Fabric Material']") private WebElement fabricMaterials;
+	@FindBy (xpath = "//button[text()='Department']") 		private WebElement departments;
+	@FindBy (xpath = "//button[text()='Color']") 			private WebElement colours;
+	@FindBy (xpath = "//button[text()='Price']") 			private WebElement prices;
+	@FindBy (xpath = "//button[text()='occasion']") 		private WebElement occasions;
+	@FindBy (xpath = "//button[text()='Fabric Material']") 	private WebElement fabricMaterials;
 	
 	
 	public SearchProductResultPage(WebDriver driver) {

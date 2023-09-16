@@ -23,7 +23,7 @@ public class CreateAccountPage {
 	public CreateAccountPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	
+	//https://secure-bananarepublic.gap.com/my-account/sign-in
 	
 	public void enterFirstName(String FirstName) {
 		firstNameField.sendKeys(FirstName);
