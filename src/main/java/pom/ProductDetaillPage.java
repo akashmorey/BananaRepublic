@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class ProductDetaillPage {
 	@FindBy (xpath = "//button[text()='Exclusions apply']") 			private WebElement exclusionsApply;
@@ -13,6 +14,8 @@ public class ProductDetaillPage {
 	@FindBy (xpath = "//input[@name='color-radio']") 					private List <WebElement> selectProductColours;
 	@FindBy (xpath = "//div[@id='swatch-label--Color']") 				private WebElement productColour;
 	@FindBy (xpath = "//span[@class='pdp-dimension__text']") 			private List <WebElement> productSizes ;
+	@FindBy (xpath = "//div[@class='pdp-quantity']")					private WebElement productQtyDropdown;
+	
 	@FindBy (xpath = "//button[@id='AddToBag_add-to-bag__button']") 	private WebElement addToBagButton;
 	@FindBy (xpath = "//button[text()='Want it sooner? Find in store']")private WebElement wantToSooner; //dropdown
 	@FindBy (xpath = "//span[text()='Select a store to check Pickup In-Store product availability']") 	private WebElement freePickupErrorMassege;
@@ -47,6 +50,12 @@ public class ProductDetaillPage {
 	public void selectProductSize(int i) {
 		productSizes.get(i).click();
 	}
+	
+	public void selectQtyFromDropdown(int i) {
+		Select a=new Select(productQtyDropdown);
+		a.selectByIndex(i);
+	}
+	
 	public  void clickOnAddToBagButton() {
 		addToBagButton.click();
 	}
