@@ -1,5 +1,8 @@
 package test;
 
-public class CreateAccountPageTest {
+public class CreateAccountPageTest extends BaseTest {
+	
+	
+	
 
 }
